@@ -12,8 +12,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class WeightLifting extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,6 +24,7 @@ public class WeightLifting extends AppCompatActivity implements View.OnClickList
     private static final String KEY_EXERCISE = "exercise";
 
     ImageButton imageButton1, imageButton2, imageButton3;
+    ImageView imageView;
     Button button;
     TextView textView;
     String exercise;
@@ -38,6 +42,9 @@ public class WeightLifting extends AppCompatActivity implements View.OnClickList
         imageButton1 = findViewById(R.id.imageButton_back_weightlifting);
         imageButton2 = findViewById(R.id.imageButton_start_weightlifting);
         imageButton3 = findViewById(R.id.imageButton_next_weightlifting);
+
+
+        imageView=findViewById(R.id.image_gif_weightliftinggf);
         button = findViewById(R.id.quitButton_weightlifting);
 
 
@@ -82,6 +89,10 @@ public class WeightLifting extends AppCompatActivity implements View.OnClickList
         }
 
         textView.setText(String.valueOf(exercise));
+
+        Glide.with(this)
+                .load(R.drawable.weightliftinggf)
+                .into(imageView);
     }
 
     private void startTimer() {

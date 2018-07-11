@@ -5,15 +5,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/image_gif_squatgf"
+        android:layout_height="match_parent"
+        android:background="@drawable/squatgf"/>
+
     <TextView
 
         android:id="@+id/textview_squat_counter"
         android:layout_width="101dp"
         android:layout_height="120dp"
+        android:textColor="#050504"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/imageButton_start_squat"
         android:layout_marginBottom="75dp"
-        android:textSize="100dp" />
+        android:textSize="100dp"
+        android:layout_alignLeft="@+id/imageButton_start_squat" />
 
 
     <ImageButton

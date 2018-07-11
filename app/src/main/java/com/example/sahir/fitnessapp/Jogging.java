@@ -13,8 +13,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import java.util.Timer;
 
@@ -24,6 +27,7 @@ public class Jogging extends AppCompatActivity {
 
     TextView t;
     ImageButton b,b1,b2;
+    ImageView imageView;
     Button b3;
     String exercise;
     int intervel = 0;
@@ -42,6 +46,8 @@ public class Jogging extends AppCompatActivity {
         b1=findViewById(R.id.imageBb_jogging);
         b2=findViewById(R.id.imageBf_jogging);
         b3=findViewById(R.id.quitButton_jogging);
+
+        imageView=findViewById(R.id.image_gif_jogginggf);
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +95,12 @@ public class Jogging extends AppCompatActivity {
             }
         });
         t.setText(String.valueOf(exercise));
+
+
+
+        Glide.with(this)
+                .load(R.drawable.jogginggf)
+                .into(imageView);
 
     }
 

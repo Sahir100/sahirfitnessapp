@@ -12,8 +12,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class Walk extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,6 +25,7 @@ public class Walk extends AppCompatActivity implements View.OnClickListener {
 
     TextView textView;
     ImageButton imageButton1, imageButton2, imageButton3;
+    ImageView imageView;
     Button button;
     String exercise;
     int interval = 0;
@@ -39,6 +43,9 @@ public class Walk extends AppCompatActivity implements View.OnClickListener {
         imageButton1 = findViewById(R.id.imageButton_back_walk);
         imageButton2 = findViewById(R.id.imageButton_start_walk);
         imageButton3 = findViewById(R.id.imageButton_next_walk);
+
+        imageView=findViewById(R.id.image_gif_walkinggf);
+
         button=findViewById(R.id.quitButton_walk);
 
         imageButton1.setOnClickListener(this);
@@ -80,6 +87,10 @@ public class Walk extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
         textView.setText(String.valueOf(exercise));
+
+        Glide.with(this)
+                .load(R.drawable.walkinggf)
+                .into(imageView);
 
     }
 

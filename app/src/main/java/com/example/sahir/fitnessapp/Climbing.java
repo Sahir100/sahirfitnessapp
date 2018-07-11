@@ -12,14 +12,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class Climbing extends AppCompatActivity {
 
     private static final String SHARED_PREF_NAME = "my pref";
     private static final String KEY_EXERCISE = "exercise";
 
+    ImageView imageView;
     TextView textView;
     ImageButton imageButton, imageButton1, imageButton2;
     Button button;
@@ -34,6 +38,7 @@ public class Climbing extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
         exercise = sharedPreferences.getString(KEY_EXERCISE, null);
 
+        imageView = findViewById(R.id.jumpingbeangif);
 
         textView = findViewById(R.id.textview_climbing_counter);
         imageButton = findViewById(R.id.imageBs_climbing);
@@ -87,6 +92,10 @@ public class Climbing extends AppCompatActivity {
             }
         });
         textView.setText(String.valueOf(exercise));
+
+        Glide.with(this)
+                .load(R.drawable.climbingstairgf)
+                .into(imageView);
     }
 
     private void startTimer() {

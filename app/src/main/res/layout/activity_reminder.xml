@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/walk"
     android:orientation="vertical">
 
     <Button
@@ -12,6 +13,8 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="70dp"
         android:text="Set Time"
+        android:textColor="#050504"
+        android:textStyle="bold"
         android:textSize="40dp"
         android:layout_marginLeft="84dp" />
 
@@ -20,13 +23,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="175dp"
+        android:textColor="#050504"
         android:text="Reminder Set For"
+        android:gravity="center"
         android:textSize="40dp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textview_timeshow"
         android:layout_width="match_parent"
+        android:textColor="#ffffff"
         android:layout_height="72dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="41dp"

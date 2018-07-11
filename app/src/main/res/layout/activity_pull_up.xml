@@ -3,17 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#050504"
     android:orientation="vertical">
 
-    <TextView
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:id="@+id/image_gif_pullupgf"
+        android:background="@drawable/pullupgf"/>
+
+    <TextView
         android:id="@+id/textview_pullup_counter"
         android:layout_width="101dp"
         android:layout_height="119dp"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/imageButton_start_pullup"
         android:layout_marginBottom="83dp"
-        android:textSize="100dp" />
+        android:textColor="#ffffff"
+        android:textSize="100dp"
+        android:layout_alignLeft="@+id/imageButton_start_pullup" />
 
 
     <ImageButton

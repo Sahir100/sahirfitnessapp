@@ -1,54 +1,81 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/strength_squat"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:padding="30dp"
-        android:text="Squat"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:background="@drawable/weight"/>
 
-    <Button
-        android:id="@+id/strength_pushup"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:padding="30dp"
-        android:text="Push Up"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/strength_weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:padding="30dp"
-        android:text="Weight Lifting"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/strength_squat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99050504"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:padding="30dp"
+            android:text="Squat"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/strength_pullup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="30dp"
-        android:text="Pull Up"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/strength_pushup"
+            android:layout_width="match_parent"
+            android:background="#99050504"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:padding="30dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="Push Up"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/imageButton_strength"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
-        tools:ignore="VectorDrawableCompat" />
+        <Button
+            android:id="@+id/strength_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:padding="30dp"
+            android:textColor="#ffffff"
+            android:text="Weight Lifting"
+            android:background="#99050504"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/strength_pullup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_weight="1"
+            android:background="#99050504"
+            android:textColor="#ffffff"
+            android:text="Pull Up"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

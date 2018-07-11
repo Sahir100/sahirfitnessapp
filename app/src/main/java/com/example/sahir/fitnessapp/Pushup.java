@@ -12,8 +12,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class Pushup extends AppCompatActivity implements View.OnClickListener{
 
@@ -23,6 +26,7 @@ public class Pushup extends AppCompatActivity implements View.OnClickListener{
     ImageButton imageButton1, imageButton2, imageButton3;
     Button button;
     TextView textView;
+    ImageView imageView;
     String exercise;
     int interval = 0;
 
@@ -39,6 +43,8 @@ public class Pushup extends AppCompatActivity implements View.OnClickListener{
         imageButton2=findViewById(R.id.imageButton_start_pushup);
         imageButton3=findViewById(R.id.imageButton_next_pushup);
         button=findViewById(R.id.quitButton_pushup);
+
+        imageView=findViewById(R.id.image_gif_pushupgf);
 
         imageButton1.setOnClickListener(this);
         imageButton2.setOnClickListener(this);
@@ -82,6 +88,10 @@ public class Pushup extends AppCompatActivity implements View.OnClickListener{
         }
 
         textView.setText(String.valueOf(exercise));
+
+        Glide.with(this)
+                .load(R.drawable.pushupgf)
+                .into(imageView);
     }
     private void startTimer() {
 

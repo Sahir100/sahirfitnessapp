@@ -12,8 +12,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class Swim extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,6 +25,7 @@ public class Swim extends AppCompatActivity implements View.OnClickListener {
 
     TextView textView;
     ImageButton imageButton1, imageButton2, imageButton3;
+    ImageView imageView;
     Button button;
     int Interval = 0;
     String exercise;
@@ -39,6 +43,9 @@ public class Swim extends AppCompatActivity implements View.OnClickListener {
         imageButton1 = findViewById(R.id.imageButton_back_swim);
         imageButton2 = findViewById(R.id.imageButton_start_swim);
         imageButton3 = findViewById(R.id.imageButton_next_swim);
+
+        imageView=findViewById(R.id.image_gif_swimming);
+
         button= findViewById(R.id.quitButton_swim);
 
         imageButton1.setOnClickListener(this);
@@ -80,6 +87,10 @@ public class Swim extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
         textView.setText(String.valueOf(exercise));
+
+        Glide.with(this)
+                .load(R.drawable.swimming)
+                .into(imageView);
 
     }
 

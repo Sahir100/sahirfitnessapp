@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_gif_swimming"
+        android:background="@drawable/swimming"/>
+
     <TextView
 
         android:id="@+id/textview_swim_counter"
@@ -13,6 +19,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="78dp"
         android:layout_marginEnd="21dp"
+        android:textColor="#050504"
         android:layout_toStartOf="@+id/imageButton_next_swim"
         android:text=""
         android:textSize="100dp"

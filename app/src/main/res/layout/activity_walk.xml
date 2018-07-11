@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_gif_walkinggf"
+        android:background="@drawable/walkinggf"/>
+
     <TextView
 
         android:id="@+id/textview_walk_counter"
@@ -13,6 +19,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/imageButton_start_walk"
         android:layout_marginBottom="79dp"
+        android:textColor="#050504"
         android:text=""
         android:textSize="100dp"
         android:layout_alignLeft="@+id/imageButton_start_walk" />

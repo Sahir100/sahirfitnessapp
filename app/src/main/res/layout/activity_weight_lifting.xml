@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_gif_weightliftinggf"
+        android:background="@drawable/weightliftinggf"/>
+
     <TextView
 
         android:id="@+id/textview_weightlifting_counter"
@@ -13,6 +19,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/imageButton_start_weightlifting"
         android:layout_marginBottom="78dp"
+        android:textColor="#050504"
         android:textSize="100dp"
         android:layout_alignLeft="@+id/imageButton_start_weightlifting" />
 

@@ -12,8 +12,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class Squat extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,6 +24,8 @@ public class Squat extends AppCompatActivity implements View.OnClickListener {
     private static final String KEY_EXERCISE = "exercise";
 
     ImageButton imageButton1, imageButton2, imageButton3 ;
+
+    ImageView imageView;
     Button button;
     TextView textView;
     String exercise;
@@ -39,6 +44,8 @@ public class Squat extends AppCompatActivity implements View.OnClickListener {
         imageButton1 = findViewById(R.id.imageButton_back_squat);
         imageButton2 = findViewById(R.id.imageButton_start_squat);
         imageButton3 = findViewById(R.id.imageButton_next_squat);
+
+        imageView=findViewById(R.id.image_gif_squatgf);
         button = findViewById(R.id.quitButton_squat);
 
 
@@ -87,6 +94,10 @@ public class Squat extends AppCompatActivity implements View.OnClickListener {
         }
 
         textView.setText(String.valueOf(exercise));
+
+        Glide.with(this)
+                .load(R.drawable.squatgf)
+                .into(imageView);
 
     }
 

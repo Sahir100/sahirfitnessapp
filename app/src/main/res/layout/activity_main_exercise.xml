@@ -9,6 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/imageedit_1_4074204847"
+        android:weightSum="2"
         android:orientation="vertical">
 
 
@@ -17,6 +19,8 @@
             android:layout_height="150dp"
             android:layout_marginBottom="10dp"
             android:gravity="start"
+            android:background="#99050504"
+            android:layout_weight="1"
             android:text="Endurance"
             android:textAlignment="viewStart"
             android:textSize="30dp"
@@ -25,6 +29,8 @@
 
         <Button
             android:layout_width="match_parent"
+            android:background="#99050504"
+            android:layout_weight="1"
             android:layout_height="150dp"
             android:layout_marginBottom="10dp"
             android:gravity="start"

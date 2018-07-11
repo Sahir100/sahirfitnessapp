@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/report"
     android:orientation="vertical">
 
 
@@ -11,6 +12,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:textColor="#050504"
+        android:background="#99ffffff"
         android:layout_marginTop="21dp"
         android:hint=" Weight in kg"
         android:padding="30dp" />
@@ -22,6 +25,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:textColor="#050504"
+        android:background="#99ffffff"
         android:layout_marginTop="149dp"
         android:hint="Height in Metre"
         android:padding="30dp" />
@@ -34,7 +39,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="183dp"
+        android:textColor="#ffffff"
         android:text="Calculate BMI"
+        android:background="#99050504"
         android:textSize="30dp" />
 
     <TextView
@@ -44,6 +51,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="94dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         android:text="BMI(kg/m*m):"
         android:textSize="30dp" />
 
@@ -53,6 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:background="#99050504"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="41dp"
         android:textSize="30dp"/>
