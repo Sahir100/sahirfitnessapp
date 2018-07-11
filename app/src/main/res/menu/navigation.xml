@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/trainingplan"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="Training Plan" />
+
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/ic_reorder_black_24dp"
+        android:title="Report" />
+
+    <item
+        android:id="@+id/reminder"
+        android:icon="@drawable/ic_access_alarms_black_24dp"
+        android:title="Reminder" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/quit"
+        android:icon="@drawable/ic_backspace_black_24dp"
+        android:title="Quit" />
+
+
+</menu>

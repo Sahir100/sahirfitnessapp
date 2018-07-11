@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/textview_pushup_counter"
+        android:layout_width="81dp"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="140dp"
+        android:textSize="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="140dp" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton_back_pushup"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        app:srcCompat="@drawable/ic_chevron_left_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton_start_pushup"
+        android:layout_width="72dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/ic_check_circle_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/imageButton_next_pushup"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+    <Button
+        android:id="@+id/quitButton_pushup"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="HOME"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
